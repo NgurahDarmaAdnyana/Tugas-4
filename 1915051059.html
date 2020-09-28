@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi UNDIKSHA</title>
+    <title>Portal Berita Wisata</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="descriptions" content="Unit Kegiatan Mahasiswa"/>
+    <meta name="keywords" content="Unit Kegiatan Mahasiswa"/>
+    <meta name="author" content="UKM"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        <script>
+            $(document).ready(function(){
+            $("#hide").click(function(){
+            $("p").hide();
+            });
+            $("#show").click(function(){
+            $("p").show();
+            });
+        </script>
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">
+                <img src="image/2.png" width="100">
+            </div>
+            <div class="judul">
+                <h2 style="margin: 0px;">Selamat Datang</h2>
+                <h4 style="margin: 0px;">Informasi Unit Kegiatan Mahasiswa (UKM)</h4>
+            </div>
+        </header>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#">Beranda</a>
+            </li>
+            <li>
+                <a href="data/1915051059.html">Data Dosen</a>
+            </li>
+            <li>
+                <a href="data/1915051059.html">Data Mahasiswa</a>
+            </li>
+            <li>
+                <a href="data/1915051059.html">Data Pegawai</a>
+            </li>
+            <li>
+                <a href="image/2.png">Gallery  UNDIKSHA</a>
+            </li>
+        </ul>
+    </nav>
+    <aside class="sidebar">
+        <div>
+            <table>
+                <main class="content">
+                    <h2 align="center"  style="margin: 0px;">
+                        Login
+                    </h2>
+                        <form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="FormReg">
+                            <table>
+                                <tr>                                        
+                                    <td>
+                                        <b>Username</b>
+                                    </td>
+                                    <td>
+                                        :
+                                    </td>
+                                    <td>
+                                        <input type="text" name="nama" value="" placeholder="Username" /><br>
+                                        <small style="color: red" id="err_nama"></small>
+                                    </td>
+                                </tr>                                        
+                                <tr>
+                                    <td>
+                                        <b>Password</b>
+                                    </td>
+                                    <td>
+                                        :
+                                    </td>
+                                    <td>
+                                        <input type="password" name="password" placeholder="Password" /><br>
+                                        <small style="color: red" id="err_password"></small>
+                                    </td>
+                                </tr>                                        
+                                <tr>                                        
+                                    <td colspan="3" align="right"><button>
+                                        Login</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+            </table>  
+        </div>
+        <div class="widget">
+            <h2>Berita Terkini</h2>
+                <ul class="menusidebar">
+                    <li>
+                        <a href="">Permohonan Evaluasi Pembelajaran Daring</a>
+                    </li>
+                    <li>
+                        <a href="">Informasi Maintenance Elearning UNDIKSHA</a>
+                    </li>
+                </ul>
+        </div>
+        <div class="widget">
+            <h2>Berita Popular</h2>
+                <ul class="menusidebar">
+                    <li>
+                        <a href="">Subsidi Kuota Untuk Mahasiswa</a>
+                    </li>
+                    <li>
+                        <a href="">Kegiatan Wisuda ketika Pandemi</a>
+                    </li>
+                    <li>
+                        <a href="">Pembelajaran Inovatif dengan Elearning</a>
+                    </li>
+                </ul>
+        </div>
+    </aside>
+    <div class="blog">
+        <div class="conteudo">
+            <img src="">
+            <h1> <b>Apa Itu Unit Kegiatan Mahasiswa?</b> </h1>
+            <hr>
+            <div class="post-info">
+                Di Posting oleh I Gst Ngr Darma Adnyana
+            </div>
+            <p>
+                Unit Kegiatan Mahasiswa (UKM) adalah wadah aktivitas kemahasiswaan untuk mengembangkan minat, bakat dan keahlian tertentu bagi para anggota-anggotanya. lembaga ini merupakan partner organisasi kemahasiswaan intra kampus lainnya seperti Badan Eksekutif Mahasiswa. Lembaga ini bersifat otonom, dan bukan merupakan bagian dari Badan Eksekutif Mahasiswa. 
+            </p>
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+                <a target="_blank" href="https://undiksha.ac.id/mahasiswa/ukm/" class="continue-lendo">Selengkapnya →</a>
+            </div>
+        <div class="conteudo">
+            <img src="image/3.JPG">
+            <h1> <b>Lebih Dekat Dengan UKM KSR-PMI UNIT UNDIKSHA</b> </h1>
+            <hr>
+            <div class="post-info">
+                Di Posting oleh I Gst Ngr Darma Adnyana
+            </div>
+            <p>
+                UKM KSR-PMI UNIT UNDIKSHA merupakan unit kegiatan mahasiswa yang bergerak dibidang kemanusiaan. 
+            </p>
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+                <a target="_blank" href="http://www.ksrpmiundiksha.com/" class="continue-lendo">Selengkapnya →</a>
+            </div>
+        </div>
+        <div class="footer" align="center">
+            <p>
+                <b>@1915051059(2019-2020)</b>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
